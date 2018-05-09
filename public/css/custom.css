@@ -1,0 +1,84 @@
+.login-text, .register-text, .area-login-register {
+  margin-top: 22px;
+  color: #fff;
+  font-size: 18px;
+}
+.login-text:hover, .register-text:hover {
+  text-decoration: none;
+  color: #2EA93C;
+}
+.footer .footer-bg .footer-item h3 {
+  color: #fff;
+}
+._navbar .navbar-collapse .navbar-right .dropdown > a {
+  margin-top: -12px;
+}
+
+._content .main_content .content_right .content_inner .list_product_main .item_product h4 {
+  height: 100px;
+}
+
+._navbar .navbar-collapse .navbar-right{
+  display: block;
+}
+
+.sidebar-mb .backdrop{
+    top: 50px;
+}
+
+.button-area-2 .btn{
+  margin-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+  .login-text, .register-text, .area-login-register {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 15px;
+  }
+  .header_search {max-width:100px}
+}
+@media (min-width: 767px) and (max-width: 810px) {
+  .login-text, .register-text, .area-login-register {
+    margin-top: 13px;
+    color: #fff;
+    font-size: 13.5px;
+  }
+}
+
+@media (min-width: 810px) and (max-width: 995px) {
+  .login-text, .register-text, .area-login-register {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 996px) and (max-width: 1050px) {
+  .login-text, .register-text, .area-login-register {
+    margin-top: 25px;
+    color: #fff;
+    font-size: 13px;
+  }
+}
+
+.owl-next {
+  margin-right: -20px;
+}
+
+.owl-prev {
+  margin-left: -20px;
+}
+
+.react-count-down {
+  margin: 0;
+  padding: 2em;
+}
+
+.count-down {
+  font-size: 200% !important;
+  font-weight: 400;
+  line-height: 1.5 !important;
+  color: #1ba849;
+  text-align: center;
+}

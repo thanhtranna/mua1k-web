@@ -1,0 +1,261 @@
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+  Mixins available:
+    -   css3-prefix             - arguments: Property, Value
+    -   background-gradient     - arguments: Start Color: #3C3C3C, End Color: #999999
+    -   background-horizontal   - arguments: Start Color: #3C3C3C, End Color: #999999
+    -   background-radial       - arguments: Start Color: #FFFFFF, Start position: 0%, End Color: #000000, End position: 100%
+    -   background-size         - arguments: Width: 100%, Height: 100%
+    -   background-opacity      - arguments: Color: #000, Opacity: .85
+    -   border-radius           - arguments: Radius: 5px
+    -   border-radius-separate  - arguments: Top Left: 5px, Top Right: 5px, Bottom Left: 5px, Bottom Right: 5px
+    -   box                     - arguments: Orientation: horizontal, Pack: center, Align: center
+    -   box-rgba                - arguments: R: 60, G: 3, B: 12, Opacity: 0.23, Color: #3C3C3C
+    -   box-shadow              - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   box-sizing              - arguments: Type: border-box
+    -   columns                 - arguments: Count: 3, Gap: 10
+    -   double-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Radius: 0
+    -   flex                    - arguments: Value: 1
+    -   flip                    - arguments: ScaleX: -1
+    -   font-face               - arguments: Font Family: myFont, Eot File Src: myFont.eot, Woff File Src: myFont.woff, Ttf File Src: myFont.ttf
+    -   opacity                 - arguments: Opacity: 0.5
+    -   outline radius          - arguments: Radius: 5px
+    -   resize                  - arguments: Direction: both
+    -   rotate                  - arguments: Degree: 0, M11: 0, M12: 0, M21: 0, M22: 0
+    CSS Matrix Rotation Calculator http://www.boogdesign.com/examples/transforms/matrix-calculator.html
+    -   text-shadow             - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   transform               - arguments: Parameters: null
+    -   transform-style         - arguments: Style: preserve-3d
+    -   transition              - Default arguments: What: all, Length: 1s, Easing: ease-in-out
+    -                            - Examples: @include transition (all 2s ease-in-out);
+    -                                        @include transition (opacity 1s ease-in 2s, width 2s ease-out);
+    -   triple-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Color Three: #000000, Radius: 0
+    -   keyframes               - arguments: Animation name
+                                - content:   Animation css
+    -   animation               - arguments: name duration timing-function delay iteration-count direction fill-mode play-state
+                                             (http://www.w3schools.com/cssref/css3_pr_animation.asp)
+
+------------------------------------------------------------- */
+/* ADDS A BROWSER PREFIX TO THE PROPERTY */
+/* BACKGROUND GRADIENT */
+/* BACKGROUND HORIZONTAL */
+/* BACKGROUND RADIAL */
+/* BACKGROUND SIZE */
+/* BACKGROUND COLOR OPACITY */
+/* COLOR OPACITY */
+/* BORDER COLOR OPACITY */
+/* BORDER RADIUS */
+/* User-select*/
+/* BOX */
+/* BOX RGBA */
+/* BOX SHADOW */
+/* BOX SIZING */
+/* COLUMNS */
+/* DOUBLE BORDERS */
+/* FLEX */
+/* FLIP */
+/* FONT FACE */
+/* OPACITY */
+/* OUTLINE RADIUS */
+/* RESIZE */
+/* ROTATE*/
+/* TEXT SHADOW */
+/* TRANSFORM  */
+/* TRANSFORM STYLE */
+/* TRANSITION */
+/* TRIPLE BORDERS */
+/* KEYFRAMES */
+/* ANIMATION */
+/*///////////////////////////////////ANIMATION//////////////////////////////////*/
+/*/////////////////////////////////////SCREEN////////////////////////////////////////*/
+/*/////////////////////////////////////DIV////////////////////////////////////////*/
+/******common******/
+@media (max-width: 1200px) {
+  .page_content .main_content .sidebar_left .box_sidebar .box_sidebar_body .user_box .user_box_avatar {
+    width: 90px; }
+  .page_content .main_content .sidebar_left .box_sidebar .box_sidebar_body .user_box .user_box_content {
+    width: calc(100% - 90px); }
+    .page_content .main_content .sidebar_left .box_sidebar .box_sidebar_body .user_box .user_box_content .ubc_dh .btn-md {
+      min-width: 100px;
+      margin-top: 3px; }
+
+  .container {
+    width: calc(100% - 30px); } }
+@media (max-width: 1024px) {
+  .friend-content .friend-tab .nav-tabs li {
+    width: calc(100% / 3);
+    display: block;
+    float: left;
+    margin-bottom: 4px; }
+    .friend-content .friend-tab .nav-tabs li:nth-child(3) {
+      padding-right: 0px; }
+    .friend-content .friend-tab .nav-tabs li:last-child {
+      padding-right: 3px; } }
+@media (max-width: 992px) {
+  ._navbar .navbar-collapse .navbar-form {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+    ._navbar .navbar-collapse .navbar-form .header_search {
+      min-width: 300px; }
+
+  .container {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0; }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0; }
+
+  ._navbar .navbar-collapse .navbar-nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 0px;
+    font-size: 14px; }
+
+  ._navbar .navbar-collapse .navbar-right .cart a {
+    padding-top: 10px; }
+  ._navbar .navbar-collapse .navbar-right .cart span.number {
+    top: 5px; }
+
+  .navbar-brand img {
+    max-height: 50px; }
+
+  ._navbar .navbar-header {
+    min-height: 50px; }
+
+  ._banner {
+    margin-top: 50px; } }
+@media (min-width: 768px) {
+  ._content .main_content .content_right .content_inner .list_product_main .item_product h4 {
+    height: 20px;
+    overflow: hidden; }
+
+  ._navbar .navbar-collapse .navbar-right {
+    display: none; } }
+@media (max-width: 768px) {
+  .help-content {
+    padding: 15px 5px; }
+
+  .page_content .main_content .row .col-xs-12.col-sm-5.col-md-4.col-lg-4 {
+    display: none; }
+
+  .page_content .main_content .row .col-xs-12.col-sm-7.col-md-8.col-lg-8 {
+    width: 100%; }
+
+  .footer .totop {
+    left: calc(100% - 65px); }
+
+  ._navbar .navbar-header {
+    float: left; }
+
+  .menu-mb {
+    float: right; }
+    .menu-mb .menu-top {
+      height: 50px;
+      padding: 10px 0; }
+      .menu-mb .menu-top ul li {
+        float: left;
+        margin-left: 10px; }
+        .menu-mb .menu-top ul li:first-child {
+          margin-left: 0; }
+        .menu-mb .menu-top ul li a {
+          color: #fff; }
+        .menu-mb .menu-top ul li img {
+          width: 30px;
+          height: 30px;
+          -webkit-border-radius: 100%;
+          -khtml-border-radius: 100%;
+          -moz-border-radius: 100%;
+          -ms-border-radius: 100%;
+          -o-border-radius: 100%;
+          border-radius: 100%; }
+        .menu-mb .menu-top ul li.cart {
+          margin-top: 4px;
+          position: relative; }
+          .menu-mb .menu-top ul li.cart a {
+            padding-top: 22px; }
+          .menu-mb .menu-top ul li.cart i {
+            font-size: 25px;
+            margin-right: 10px; }
+          .menu-mb .menu-top ul li.cart span.number {
+            position: absolute;
+            top: -3px;
+            left: 15px;
+            width: 20px;
+            height: 20px;
+            -webkit-border-radius: 100%;
+            -khtml-border-radius: 100%;
+            -moz-border-radius: 100%;
+            -ms-border-radius: 100%;
+            -o-border-radius: 100%;
+            border-radius: 100%;
+            background-color: #F86161;
+            color: #fff;
+            font-size: 11px;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+
+  ._banner .owl-carousel .owl-nav .owl-next, ._banner .owl-carousel .owl-nav .owl-prev {
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+    top: calc(50% - 15px); }
+
+  ._banner .owl-carousel .owl-nav .owl-next {
+    right: 10px; }
+
+  ._banner .owl-carousel .owl-nav .owl-prev {
+    left: 10px; }
+
+  .friend-content .friend-tab .nav-tabs li {
+    width: 50%;
+    display: block;
+    float: left;
+    margin-bottom: 4px; }
+    .friend-content .friend-tab .nav-tabs li a {
+      margin-bottom: 0px; }
+    .friend-content .friend-tab .nav-tabs li:nth-child(2) {
+      padding-right: 0px; }
+    .friend-content .friend-tab .nav-tabs li:nth-child(3) {
+      padding-right: 3px; }
+    .friend-content .friend-tab .nav-tabs li:nth-child(4) {
+      padding-right: 0px; }
+    .friend-content .friend-tab .nav-tabs li:last-child {
+      width: 100%;
+      padding-right: 0px; } }
+@media (max-width: 767px) {
+  .page_content {
+    margin-top: 55px; }
+
+  .menu-top .btn-menu-mb {
+    margin-top: 8px;
+    margin-left: 4px; }
+    .menu-top .btn-menu-mb a span {
+      display: block;
+      height: 2px;
+      width: 20px;
+      margin-bottom: 4px;
+      background-color: #fff; } }
+@media (max-width: 640px) {
+  .friend-content .friend-explain .friend-explain-content .friend-qr-code {
+    width: 100%;
+    text-align: center; }
+  .friend-content .friend-explain .friend-explain-content .friend-explain-inner {
+    width: 100%; } }
+@media (max-width: 414px) {
+  .footer .totop {
+    bottom: 40px; } }
+
+/*# sourceMappingURL=responsive.css.map */
